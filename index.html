@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ekant | Software Engineer</title>
+  <meta name="description" content="Ekant, full-stack .NET and Angular software engineer at Bosch. Projects, skills and resume.">
+  <meta name="author" content="Ekant">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="light">
+
+  <!-- Social sharing preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ekant | Full-stack .NET & Angular Engineer">
+  <meta property="og:description" content="Ekant, full-stack .NET and Angular software engineer at Bosch. Projects, skills and resume.">
+  <meta property="og:image" content="assets/img/ekant.jpg">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><i>E</i>Ekant</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#skills">What I do</a><a href="#projects">Highlights</a><a href="#bosch">Bosch projects</a><a href="#journey">Journey</a><a class="pill" href="#contact">Let's connect</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" id="hero">
+    <div class="grid-bg"></div><div class="glow"></div>
+    <div class="wrap">
+      <div class="hero-text">
+        <div class="badge"><img src="assets/img/ekant.jpg" width="38" height="38" alt="Ekant"><i class="dot"></i><span><b>Ekant</b> · Software Engineer at Bosch</span></div>
+        <h1>I build<span class="rotator" aria-live="polite"><span id="rot">full-stack apps</span></span>that people rely on.</h1>
+        <p class="lede">Full-stack .NET and Angular engineer with <b>4+ years</b> of shipping production software. I design APIs, build clean interfaces, <b>modernize legacy systems</b> and own applications from first commit to live support.</p>
+        <div class="cta">
+          <a class="btn primary" href="#bosch">See my work <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="term" aria-label="Interactive terminal">
+        <div class="term-bar"><i></i><i></i><i></i><span>ekant@portfolio: ~</span></div>
+        <div class="term-body" id="term">
+          <div id="out"></div>
+          <form class="term-in" id="term-form" autocomplete="off">
+            <label for="term-input">ekant ~ $</label>
+            <input id="term-input" type="text" spellcheck="false" aria-label="Type a command" placeholder="type help">
+          </form>
+        </div>
+        <div class="term-hints" id="hints">
+          <button type="button" data-cmd="whoami">whoami</button>
+          <button type="button" data-cmd="skills">skills</button>
+          <button type="button" data-cmd="projects">projects</button>
+          <button type="button" data-cmd="contact">contact</button>
+          <button type="button" data-cmd="hire ekant">hire ekant</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-label="Technologies">
+    <div class="track">
+      <span>C#</span><span>ASP.NET</span><span>.NET Core 8</span><span>Angular 21</span><span>REST APIs</span><span>Oracle SQL</span><span>Java</span><span>IIS</span><span>HTML &amp; CSS</span><span>Swagger</span><span>Postman</span><span>Git</span><span>GitHub Copilot</span><span>Agile / Scrum</span>
+      <span aria-hidden="true">C#</span><span aria-hidden="true">ASP.NET</span><span aria-hidden="true">.NET Core 8</span><span aria-hidden="true">Angular 21</span><span aria-hidden="true">REST APIs</span><span aria-hidden="true">Oracle SQL</span><span aria-hidden="true">Java</span><span aria-hidden="true">IIS</span><span aria-hidden="true">HTML &amp; CSS</span><span aria-hidden="true">Swagger</span><span aria-hidden="true">Postman</span><span aria-hidden="true">Git</span><span aria-hidden="true">GitHub Copilot</span><span aria-hidden="true">Agile / Scrum</span>
+    </div>
+  </div>
+
+  <section class="stats">
+    <div class="wrap">
+      <div class="stat rv"><b><span data-count="4">4</span><em>+</em></b><span>years building production software</span></div>
+      <div class="stat rv"><b><span data-count="10">10</span></b><span>enterprise applications contributed to</span></div>
+      <div class="stat rv"><b><span data-count="3">3</span></b><span>legacy apps upgraded to Angular 21</span></div>
+      <div class="stat rv"><b><span data-count="2">2</span></b><span>production applications owned end to end</span></div>
+    </div>
+  </section>
+
+  <section class="sec" id="skills">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div>
+          <span class="eyebrow">What I do</span>
+          <h2>Six things I can do for your team.</h2>
+          <p>Pick a capability to see what it covers, where I've used it, and the tools behind it.</p>
+        </div>
+      </div>
+      <div class="caps">
+        <div class="cap-list" role="tablist" aria-label="Capabilities" id="cap-list"></div>
+        <div class="cap-panel" role="tabpanel" id="cap-panel" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="projects">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div>
+          <span class="eyebrow">Highlights</span>
+          <h2>Wins that moved the needle.</h2>
+          <p>Most of my work is replacing aging systems with modern ones, without breaking anything the business depends on.</p>
+        </div>
+      </div>
+      <div class="projects">
+        <article class="proj big rv">
+          <div class="top-row"><span class="tag">Application owner</span><span class="award" style="color:#ffb086"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>Recognized</span></div>
+          <h3>SendToPlant 3.0</h3>
+          <p>A business-critical tool that Bosch and OEM teams use to send finished software releases on to their plants. I migrated the entire application to a modern stack. Flip the switch to compare.</p>
+          <div class="switch" role="group" aria-label="Compare stacks">
+            <button type="button" id="sw-legacy" aria-pressed="false">Before</button>
+            <button type="button" id="sw-modern" aria-pressed="true">After</button>
+          </div>
+          <div class="stackview modern" id="stackview">
+            <div class="layer"><small>Frontend</small><b id="sv-fe">Angular</b></div>
+            <div class="layer"><small>Backend</small><b id="sv-be">.NET Core REST API</b></div>
+          </div>
+        </article>
+        <article class="proj rv">
+          <div class="top-row"><span class="tag">Application owner</span><span class="award"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>Owned app</span></div>
+          <h3>Archiver</h3>
+          <p>Long-term storage that keeps every software release and its job for 35 years, so any release can be traced decades later. I own its features, stability, deployments and support.</p>
+        </article>
+        <article class="proj half rv">
+          <div class="top-row"><span class="tag">Full-stack</span><span class="award"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>Recognized</span></div>
+          <h3>webFLOW modernization</h3>
+          <div class="ft"><span class="from">WCF</span><span class="ar">→</span><span>Web API</span><span class="ar">+</span><span>new UI</span></div>
+          <p>Rebuilt the backend as a modern Web API and redesigned the full user interface, making the app easier to use and to maintain.</p>
+        </article>
+        <article class="proj half rv">
+          <div class="top-row"><span class="tag">Frontend</span></div>
+          <h3>Angular 7 &amp; 11 → 21</h3>
+          <div class="ft"><span class="from">Angular 7 / 11</span><span class="ar">→</span><span>Angular 21</span></div>
+          <p>Upgraded three production front ends across many major versions, bringing them onto a current, secure and supported framework.</p>
+        </article>
+        <article class="proj rv">
+          <div class="top-row"><span class="tag">Automation</span><span class="award"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>Recognized</span></div>
+          <h3>Self-watching log monitor</h3>
+          <div class="ft"><span class="from">Manual log checks</span><span class="ar">→</span><span>Instant alerts</span></div>
+          <p>Replaced daily manual log reviews with a tool that alerts owners the moment an error appears or an app stops.</p>
+        </article>
+        <article class="proj rv">
+          <div class="top-row"><span class="tag">Backend</span></div>
+          <h3>WCF → .NET Core 8</h3>
+          <p>Moved backend services from legacy WCF to .NET Core 8 REST APIs and upgraded older .NET Framework versions across the suite.</p>
+        </article>
+        <article class="proj rv">
+          <div class="top-row"><span class="tag">Desktop &amp; tooling</span></div>
+          <h3>Windows apps &amp; utilities</h3>
+          <p>Built Windows desktop applications for internal projects and .NET utilities that take repetitive tasks off the team.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="bosch">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div>
+          <span class="eyebrow">Projects at Bosch</span>
+          <h2>Two products, at both ends of the V.</h2>
+          <p>Car software at Bosch is built along a V-shaped process: plan and design down one side, build at the bottom, test back up the other side. I've worked on the tool at the start of that journey and the suite at the very end.</p>
+        </div>
+      </div>
+
+      <div class="ptabs" role="tablist" aria-label="Bosch projects">
+        <button type="button" class="ptab" role="tab" id="tab-pdt" data-p="pdt" aria-selected="true" aria-controls="panel-pdt">
+          <small>Feb 2024 — Present · .NET · Angular</small>
+          <b>ProdM — PDT Tools</b>
+          <span>Suite of 10 release tools used across Bosch and OEMs</span>
+          <i class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>
+        </button>
+        <button type="button" class="ptab" role="tab" id="tab-ipe" data-p="ipe" aria-selected="false" aria-controls="panel-ipe">
+          <small>Aug 2022 — Jan 2024 · Java</small>
+          <b>IPE — Integrated Planning Environment</b>
+          <span>Planning platform for ECU development</span>
+          <i class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i>
+        </button>
+      </div>
+
+      <div class="bgrid">
+        <div class="card vm rv">
+          <div class="card-h"><span class="eyebrow">ECU development · V-model</span><span class="eyebrow" style="color:var(--muted)">Click a highlighted stage</span></div>
+          <div style="overflow-x:auto"><svg viewBox="0 0 720 320" style="min-width:540px" role="img" aria-label="V-model showing IPE at the planning stage and PDT Tools at the release stage">
+            <line class="link" x1="190" y1="50" x2="530" y2="50"/>
+            <line class="link" x1="246" y1="123" x2="474" y2="123"/>
+            <line class="link" x1="304" y1="197" x2="416" y2="197"/>
+            <polyline class="arm" points="190,50 360,270 530,50"/>
+            <line class="seg" id="seg-ipe" x1="190" y1="50" x2="246" y2="123"/>
+            <line class="seg on" id="seg-pdt" x1="530" y1="50" x2="474" y2="123"/>
+            <circle class="nd" cx="246" cy="123" r="6"/>
+            <circle class="nd" cx="304" cy="197" r="6"/>
+            <circle class="nd" cx="360" cy="270" r="6"/>
+            <circle class="nd" cx="416" cy="197" r="6"/>
+            <circle class="nd" cx="474" cy="123" r="6"/>
+            <text class="lb" x="230" y="127" text-anchor="end">System design</text>
+            <text class="lb" x="288" y="201" text-anchor="end">Component design</text>
+            <text class="lb" x="360" y="298" text-anchor="middle">Software build</text>
+            <text class="lb" x="432" y="201">Integration testing</text>
+            <text class="lb" x="490" y="127">System testing</text>
+            <g class="zone" id="z-ipe" data-p="ipe" tabindex="0" role="button" aria-label="Show IPE">
+              <circle class="ring" cx="190" cy="50" r="9"/>
+              <circle class="core" cx="190" cy="50" r="9"/>
+              <text class="zlb" x="174" y="54" text-anchor="end">Requirements &amp; planning</text>
+              <text class="ztag" x="174" y="74" text-anchor="end">IPE · 2022–24</text>
+            </g>
+            <g class="zone on" id="z-pdt" data-p="pdt" tabindex="0" role="button" aria-label="Show PDT Tools">
+              <circle class="ring" cx="530" cy="50" r="9"/>
+              <circle class="core" cx="530" cy="50" r="9"/>
+              <text class="zlb" x="546" y="54">Release &amp; delivery</text>
+              <text class="ztag" x="546" y="74">PDT TOOLS · 2024–NOW</text>
+            </g>
+          </svg></div>
+          <div class="vm-note"><span><i></i>Selected project</span><span><i class="off"></i>Other stages of the process</span></div>
+        </div>
+
+        <!-- PDT info -->
+        <div class="card pinfo rv" id="panel-pdt" role="tabpanel" aria-labelledby="tab-pdt">
+          <span class="period">Feb 2024 — Present · ProdM team</span>
+          <h3>ProdM — PDT Tools</h3>
+          <p>A suite of 10 tools used across Bosch and by OEMs (carmakers such as VW, BMW and Daimler) at the end of the ECU V-cycle. Teams use them to track each ECU generation, archive builds and pass finished releases (PVERs) on to plants. We ship new versions of the tools every PI (program increment) and whenever a new requirement comes in. I have worked on all 10.</p>
+          <div class="kpis">
+            <div class="kpi"><b>10/10</b><span>tools in the suite worked on</span></div>
+            <div class="kpi"><b>Every PI</b><span>new tool releases, plus on-demand updates</span></div>
+            <div class="kpi"><b>2</b><span>apps I own: Archiver &amp; SendToPlant</span></div>
+          </div>
+          <div class="chips"><span>C#</span><span>ASP.NET</span><span>.NET Core 8</span><span>Angular 21</span><span>Oracle SQL</span><span>IIS</span></div>
+        </div>
+
+        <!-- IPE info -->
+        <div class="card pinfo" id="panel-ipe" role="tabpanel" aria-labelledby="tab-ipe" hidden>
+          <span class="period">Aug 2022 — Jan 2024 · Planning team</span>
+          <h3>IPE — Integrated Planning Environment</h3>
+          <p>The planning application engineering teams use to plan and manage vehicle ECU development, at the very start of the V-cycle. This is where I began my career and learned how ECU software moves from first plan to final release.</p>
+          <div class="kpis">
+            <div class="kpi"><b>18 mo</b><span>building features on IPE</span></div>
+            <div class="kpi"><b>Java</b><span>core language of the platform</span></div>
+            <div class="kpi"><b>Start</b><span>of the V-cycle, where projects are planned</span></div>
+          </div>
+          <div class="chips"><span>Java</span><span>Feature development</span><span>Defect fixing</span><span>Release support</span></div>
+        </div>
+      </div>
+
+      <!-- PDT visual + areas -->
+      <div id="vis-pdt">
+        <div class="card pvis arch rv">
+          <div class="card-h"><span class="eyebrow">Inside the tool suite · how a release moves through it</span><div class="legend2"><span><i style="background:var(--accent)"></i>Owned / modernized by me</span><span><i style="background:var(--accent-2)"></i>Release in transit</span><span style="color:var(--ink)">Tap any tool</span></div></div>
+          <div class="arch-scroll">
+          <svg viewBox="0 0 900 340" role="group" aria-label="Delivery suite architecture: a release package goes to an intake service, the build engine, webFLOW, SendToPlant and finally SAP / Plant, meaning Bosch and OEM plants. The build engine runs a three-stage pipeline that webFLOW tracks and users can trigger. A data source and a sync service feed the build engine. The core database is used at every step and Archiver stores releases and jobs for 35 years.">
+            <defs>
+              <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5b6575"/></marker>
+            </defs>
+            <rect class="band" x="262" y="246" width="370" height="80" rx="16"/>
+            <text class="band-t" x="278" y="266">DATA &amp; STORAGE</text>
+            <path class="dbl" d="M470 272 L195 197"/><path class="dbl" d="M492 272 L345 202"/><path class="dbl" d="M525 272 V210"/><path class="dbl" d="M580 272 L695 197"/>
+
+            <path class="flow" d="M108 170 H137" marker-end="url(#ah)"/>
+            <path class="flow" d="M250 170 H287" marker-end="url(#ah)"/>
+            <path class="flow" d="M400 170 H452" marker-end="url(#ah)"/>
+            <path class="flow" d="M598 170 H637" marker-end="url(#ah)"/>
+            <path class="flow" d="M750 170 H782" marker-end="url(#ah)"/>
+            <path class="flow" d="M252 60 H288" marker-start="url(#ah)" marker-end="url(#ah)"/>
+            <path class="flow" d="M345 85 V142" marker-end="url(#ah)"/>
+            <path class="flow dash" d="M398 140 L438 84" marker-end="url(#ah)"/><text class="lnk" x="410" y="106" text-anchor="end">runs</text>
+            <path class="flow dash" d="M525 84 V130" marker-start="url(#ah)" marker-end="url(#ah)"/><text class="lnk" x="533" y="112">tracks &amp; triggers</text>
+
+            <circle class="pk" r="6"><animateMotion dur="5s" repeatCount="indefinite" path="M60 170 H840"/></circle>
+            <circle class="pk" r="6"><animateMotion dur="5s" begin="2.5s" repeatCount="indefinite" path="M60 170 H840"/></circle>
+            <circle class="pk alt" r="4.5"><animateMotion dur="2.6s" repeatCount="indefinite" path="M345 85 V145"/></circle>
+
+            <g class="tool input" data-k="pver" tabindex="0" role="button"><rect x="12" y="140" width="96" height="60" rx="30"/><text x="60" y="166">Release</text><text class="sub" x="60" y="184">input package</text></g>
+            <g class="tool" data-k="adapter" tabindex="0" role="button"><rect x="140" y="145" width="110" height="50" rx="10"/><text x="195" y="168">Intake</text><text class="sub" x="195" y="185">service</text></g>
+            <g class="tool" data-k="toolchain" tabindex="0" role="button"><rect x="290" y="140" width="110" height="60" rx="10"/><text x="345" y="168">Build engine</text><text class="sub" x="345" y="186">runs build stages</text></g>
+            <g class="tool mine" data-k="webflow" tabindex="0" role="button"><rect x="455" y="132" width="140" height="76" rx="12"/><text x="525" y="168">webFLOW</text><text class="sub" x="525" y="187">workflow engine</text><text class="star" x="585" y="148">★</text></g>
+            <g class="tool mine" data-k="send" tabindex="0" role="button"><rect x="636" y="145" width="118" height="50" rx="10"/><text x="695" y="175">SendToPlant</text><text class="star" x="745" y="158">★</text></g>
+            <g class="tool dest" data-k="sap" tabindex="0" role="button"><rect x="785" y="135" width="105" height="70" rx="12"/><text x="837" y="165">SAP / Plant</text><text class="sub" x="837" y="184">Bosch &amp; OEM</text></g>
+            <g class="tool" data-k="cenv" tabindex="0" role="button"><rect x="140" y="35" width="110" height="50" rx="10"/><text x="195" y="58">Data source</text><text class="sub" x="195" y="74">upstream</text></g>
+            <g class="tool" data-k="pdtlt" tabindex="0" role="button"><rect x="290" y="35" width="110" height="50" rx="10"/><text x="345" y="58">Sync service</text><text class="sub" x="345" y="74">two-way link</text></g>
+            <g class="tool steps" data-k="steps" tabindex="0" role="button"><rect x="430" y="30" width="190" height="52" rx="10"/><text x="525" y="54">Stage 1 · 2 · 3</text><text class="sub" x="525" y="71">build pipeline</text></g>
+            <g class="tool mine" data-k="archiver" tabindex="0" role="button"><rect x="290" y="272" width="120" height="44" rx="10"/><text x="350" y="292">Archiver</text><text class="sub" x="350" y="307">35-year storage</text><text class="star" x="400" y="286">★</text></g>
+            <g class="tool db" data-k="pdtdb" tabindex="0" role="button"><rect class="dbring" x="460" y="272" width="130" height="44" rx="10"/><rect x="460" y="272" width="130" height="44" rx="10"/><text x="525" y="292">Core database</text><text class="sub" x="525" y="307">used at every step</text></g>
+          </svg>
+          </div>
+          <div class="tinfo" id="tinfo" aria-live="polite">
+            <div class="tinfo-main"><span class="eyebrow" id="ti-kind">Workflow engine</span><h4 id="ti-name">webFLOW</h4><p id="ti-role"></p></div>
+            <div class="tinfo-mine" id="ti-mine-wrap"><small>My contribution</small><p id="ti-mine"></p></div>
+          </div>
+        </div>
+        <div class="areas">
+          <div class="area rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg></div><h4>Frontend</h4><p>Built the user interfaces in Angular, HTML and CSS with clean, easy-to-use layouts, and migrated 3 applications from Angular 7 and 11 to Angular 21.</p></div>
+          <div class="area rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg></div><h4>Backend</h4><p>Built REST APIs in C# and ASP.NET for different modules, migrated backend code from WCF to .NET Core 8 and upgraded older .NET Framework versions.</p></div>
+          <div class="area rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div><h4>Database &amp; automation</h4><p>Maintained application data with Oracle SQL Developer and wrote .NET utilities that automate repetitive tasks for the team.</p></div>
+          <div class="area rv"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v13M7 10l5 5 5-5M4 19h16"/></svg></div><h4>Hosting &amp; release</h4><p>Hosted and deployed web applications and APIs on IIS servers, and supported release activities in Agile sprints.</p></div>
+        </div>
+      </div>
+
+      <!-- IPE visual + areas -->
+      <div id="vis-ipe" hidden>
+        <div class="card pvis">
+          <div class="card-h"><span class="eyebrow">What IPE helps teams plan</span><span class="tag">Example plan</span></div>
+          <div class="board" id="board">
+            <span></span><div class="q"><span>Q1</span><span>Q2</span><span>Q3</span><span>Q4</span></div>
+            <span class="rl">Requirements</span><div class="tr"><i class="bar" style="--s:0%;--w:28%;--d:.0s"></i></div>
+            <span class="rl">System design</span><div class="tr"><i class="bar" style="--s:14%;--w:30%;--d:.12s"></i></div>
+            <span class="rl">Component design</span><div class="tr"><i class="bar" style="--s:30%;--w:28%;--d:.24s"></i></div>
+            <span class="rl">Software build</span><div class="tr"><i class="bar" style="--s:44%;--w:30%;--d:.36s"></i></div>
+            <span class="rl">Testing</span><div class="tr"><i class="bar" style="--s:62%;--w:26%;--d:.48s"></i></div>
+            <span class="rl">Release</span><div class="tr"><i class="bar hot" style="--s:86%;--w:14%;--d:.6s"></i></div>
+          </div>
+        </div>
+        <div class="areas three">
+          <div class="area"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div><h4>Feature development</h4><p>Built new features and enhancements for the planning application in Java.</p></div>
+          <div class="area"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg></div><h4>Defects &amp; testing</h4><p>Fixed defects and supported testing and releases together with the team.</p></div>
+          <div class="area"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 012-2h12v18H6a2 2 0 01-2-2zM8 7h6"/></svg></div><h4>Domain knowledge</h4><p>Built a solid understanding of the ECU development process, which carried straight into PDT Tools.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="journey">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div>
+          <span class="eyebrow">Journey</span>
+          <h2>From fresher to application owner.</h2>
+        </div>
+      </div>
+      <div class="journey rv">
+        <div class="stop"><time>2018 – 2022</time><h3>B.E. Computer Science</h3><p>AMC Engineering College, VTU Bengaluru. Graduated with a CGPA of 8.41.</p></div>
+        <div class="stop"><time>Aug 2022</time><h3>Java developer at Bosch</h3><p>Built features and fixed defects on IPE, a planning platform for engineering projects.</p></div>
+        <div class="stop"><time>Feb 2024</time><h3>Switched to .NET</h3><p>Moved to the .NET team and ramped up quickly on C#, ASP.NET and Angular across a 10-app suite.</p></div>
+        <div class="stop now"><time>Today</time><h3>Owner of two apps</h3><div class="owned"><span>SendToPlant ★</span><span>Archiver ★</span></div><p>Own both apps end to end and drive modernization work across the suite.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="how">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div>
+          <span class="eyebrow">How I work</span>
+          <h2>The engineer behind the code.</h2>
+        </div>
+      </div>
+      <div class="traits">
+        <div class="trait rv"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>End-to-end ownership</h3><p>I take an app from requirements to deployment and stay with it in production.</p></div>
+        <div class="trait rv"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 20c0-2 1-4 3-4.5"/></svg></div><h3>Stakeholder collaboration</h3><p>I turn requests from users and teams into clear, buildable work.</p></div>
+        <div class="trait rv"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div><h3>Quick learner</h3><p>Went from Java to a full .NET and Angular stack and was productive fast.</p></div>
+        <div class="trait rv"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="8" height="7" rx="1.5"/><rect x="13" y="4" width="8" height="7" rx="1.5"/><rect x="3" y="13" width="8" height="7" rx="1.5"/><rect x="13" y="13" width="8" height="7" rx="1.5"/></svg></div><h3>Multitasking</h3><p>I balance feature work, migrations and production support across several apps.</p></div>
+      </div>
+      <details class="context rv">
+        <summary>Industry context: where my software is used</summary>
+        <div class="inner">
+          <div>
+            <p>My applications are used across Bosch and by carmakers such as Volkswagen, BMW and Daimler at the final stage of car software development. Once software for a car's internal computers is tested and approved, teams use our tools to track each release, archive it and hand it on to plants.</p>
+            <p>We release new versions of the tools every PI (program increment) and whenever a new requirement comes in. Reliability matters: the right software version has to reach the right place, every time.</p>
+          </div>
+          <dl>
+            <div><dt>ECU</dt><dd>A small computer in a car that controls one system, like the engine or brakes.</dd></div>
+            <div><dt>PVER</dt><dd>A finished, approved software release for an ECU.</dd></div>
+            <div><dt>OEM</dt><dd>The carmaker, such as VW, BMW or Daimler. OEM teams use our tools too.</dd></div>
+          </dl>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact-card rv">
+        <div>
+          <span class="eyebrow" style="color:#ffb086">Contact</span>
+          <h2 style="margin-top:14px">Have a system that needs <em>a fresh start?</em></h2>
+          <p>I'm happy to talk about full-stack .NET and Angular roles, modernization projects and internal tools. Email is the fastest way to reach me.</p>
+        </div>
+        <div class="lines">
+          <div class="line"><div><small>Email</small><span id="email">shuklaekant@gmail.com</span></div><button class="copy" type="button" data-copy="email">Copy</button></div>
+          <div class="line"><div><small>Resume</small><span>Ekant_Resume.pdf · PDF</span></div><a class="copy" href="Ekant_Resume.pdf" download style="color:var(--ink);text-decoration:none;font:600 12.5px/1 var(--f-body)"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:5px"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg>Download</a></div>
+          <div class="line"><div><small>LinkedIn</small><a href="https://www.linkedin.com/in/ekant-38934a222" target="_blank" rel="noopener">linkedin.com/in/ekant-38934a222 ↗</a></div></div>
+          <div class="line"><div><small>Based in</small><span>Bengaluru, Karnataka, India</span></div></div>
+          <div class="line"><div><small>Languages</small><span>English · Hindi</span></div></div>
+        </div>
+      </div>
+      <div class="foot"><span>© 2026 Ekant</span><span>Designed &amp; built by Ekant in Bengaluru</span></div>
+    </div>
+  </section>
+</main>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
